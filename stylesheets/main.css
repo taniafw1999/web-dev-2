@@ -20,7 +20,7 @@ ul {
   align: center;
   height: 40px;
   background-color: #f1f1f1;
-  position: fixed; /* Make it stick, even on scroll */
+  /* position: fixed; Make it stick, even on scroll */
   overflow: hidden; /*in case content overflows*/
 }
 li {
