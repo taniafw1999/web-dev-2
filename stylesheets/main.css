@@ -1,8 +1,44 @@
-
 body {
   background-color: lightblue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  width: 80%;
+  width: 100%;
+  margin: 0 0 0 0;
+}
+
+.header {
+  width: 100%;
+  margin: 0;
+}
+
+.header__inner {
+  width: 100%;
+  margin: 0;
+}
+
+.header__inner--top {
+  text-align: center;
+  background-image: url("../images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
+  background-size: 100%;
+  box-sizing: border-box;
+  height: 100px;
+}
+
+.header__title {
+  font-size: 30px;
+  left: 50%;
+  margin: 0;
+  top: 50%;
+}
+
+.header__inner--bottom {
+
+}
+
+.header__subtitles {
+  list-style-type: none;
+  height: 40px;
+  background-color: #f1f1f1;
+  overflow: hidden;
 }
 
 h1,h2 {
@@ -15,21 +51,15 @@ p {
   font-size: 20px;
   padding-left: 20px;
 }
-ul {
-  list-style-type: none;
-  align: center;
-  height: 40px;
-  background-color: #f1f1f1;
-  /* position: fixed; Make it stick, even on scroll */
-  overflow: hidden; /*in case content overflows*/
-}
+
 li {
   float: left;
   padding-left: 50px;
   padding-right: 50px;
+  
 }
 li a {
-  display: block;
+  display: inline-block;
   color: #000;
   padding: 8px;
   text-decoration: none;
