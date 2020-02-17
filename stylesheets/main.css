@@ -5,6 +5,12 @@ body {
   margin: 0 0 0 0;
 }
 
+body section {
+  margin: auto;
+  max-width: 1290px;
+  padding: 0 30px 40px;
+}
+
 .header {
   width: 100%;
   margin: 0;
@@ -15,23 +21,56 @@ body {
   margin: 0;
 }
 
+@media screen and (max-width: 768px) and (min-width:300px) {
+  .header__inner--top {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width:767px) {
+  .header__inner--top h2 {
+    font-size: 50px !important;
+  }
+}
+
 .header__inner--top {
   text-align: center;
   background-image: url("../images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
   background-size: 100%;
   box-sizing: border-box;
-  height: 100px;
+  height: 300px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo--left {
+  max-width: 100%;
+  height: auto;
+  width: 200px;
+  left: 100px;
+  padding-right: 50px;
+}
+
+.header__inner--top h2 {
+  margin: 0;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__title {
-  font-size: 30px;
-  left: 50%;
-  margin: 0;
-  top: 50%;
+  color: white;
 }
 
-.header__inner--bottom {
+.header__title a {
+  margin-top: 50px;
+}
 
+.header__inner--bottom ul {
+  margin-top: 0;
+  /* padding: 0 207px; */
 }
 
 .header__subtitles {
@@ -39,34 +78,48 @@ body {
   height: 40px;
   background-color: #f1f1f1;
   overflow: hidden;
+  display: flex;
+  justify-content: space-around;
 }
 
-h1,h2 {
-  color: white;
-  text-align: center;
+@media screen and (max-width: 768px) and (min-width:300px) {
+  .header__subtitles {
+    height: 55px !important;
+    align-items: center;
+  }
 }
 
-p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  padding-left: 20px;
+
+.header__subtitles li {
+  margin-bottom: unset;
+}
+
+.sub__elem {
+  padding: 10px;
+  transition-duration: 0.6s;
+ 
+  justify-content: center;
+  display: flex;
+}
+
+.sub__elem a {
+  text-decoration: none;
+  color: black;
+}
+
+.sub__elem:hover {
+  background-color: #c0c0c0;
 }
 
 li {
-  float: left;
-  padding-left: 50px;
-  padding-right: 50px;
-  
-}
-li a {
-  display: inline-block;
-  color: #000;
-  padding: 8px;
-  text-decoration: none;
+  margin-bottom: 6px;
 }
 
-/* Change the link color on hover */
-li a:hover {
-  background-color: #555;
-  color: white;
+.title__h2 {
+  padding: 10px 0;
+}
+
+.announcement__elem a {
+  text-decoration: none;
+  color: lightcoral;
 }
