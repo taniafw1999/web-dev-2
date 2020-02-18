@@ -41,7 +41,7 @@ body section {
   background-image: url("../images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
   background-size: 100%;
   box-sizing: border-box;
-  height: 300px;
+  height: 150px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -50,14 +50,14 @@ body section {
 .header__logo--left {
   max-width: 100%;
   height: auto;
-  width: 200px;
+  width: 100px;
   left: 100px;
   padding-right: 50px;
 }
 
 .header__inner--top h2 {
   margin: 0;
-  font-size: 80px;
+  font-size: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,7 +98,7 @@ body section {
 }
 
 .content {
-  margin-top: 360px;
+  margin-top: 220px;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -210,6 +210,11 @@ p {
   font-size: 16px;
 }
 
+table {
+  margin: 40px 0px 20px;
+  width: 100%;
+}
+
 table,
 th,
 td {
@@ -222,24 +227,20 @@ th {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) and (min-width: 300px) {
+  td,
+  th {
+    padding: 5px;
+  }
+}
+
 th {
   font-size: larger;
-}
-table {
-  margin: 40px 0px 20px;
-  width: 100%;
 }
 
 @media screen and (max-width: 768px) and (min-width: 300px) {
   tr {
     font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 768px) and (min-width: 300px) {
-  td,
-  th {
-    padding: 5px;
   }
 }
 
