@@ -1,5 +1,6 @@
 .header {
   width: 100vw;
+  height: fit-content;
   margin: 0;
   z-index: 1;
   position: fixed;
@@ -28,7 +29,7 @@
   background-image: url("../images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
   background-size: 100%;
   box-sizing: border-box;
-  height: 150px;
+  height: 10vw;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -37,21 +38,22 @@
 .header__logo--left {
   max-width: 100%;
   height: auto;
-  width: 100px;
+  width: 8vw;
   left: 100px;
   padding-right: 50px;
 }
 
 .header__inner--top h2 {
   margin: 0;
-  font-size: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .header__title {
+  font-size: 5vw;
   color: white;
+  text-shadow: 2px 2px #8f8f8f;
 }
 
 .header__title a {
@@ -60,7 +62,6 @@
 
 .header__inner--bottom ul {
   margin-top: 0;
-  /* padding: 0 207px; */
 }
 
 .header__subtitles {
@@ -83,6 +84,8 @@
 .header__subtitles li {
   margin-bottom: unset;
 }
+
+
 
 .sub__elem {
   padding: 10px;
