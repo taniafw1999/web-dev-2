@@ -2,7 +2,6 @@ body {
   background-color: lightblue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
-  margin: 0 0 0 0;
 }
 
 body section {
@@ -12,13 +11,16 @@ body section {
 }
 
 .header {
-  width: 100%;
+  width: 100vw;
   margin: 0;
-}
-
-.header__inner {
-  width: 100%;
-  margin: 0;
+  z-index:1;
+  position:fixed;
+  overflow:hidden;
+  font-size: 0.5vw;
+  vertical-align: middle;
+  top:0;
+  left:0;
+  padding:0;
 }
 
 @media screen and (max-width: 768px) and (min-width:300px) {
@@ -73,9 +75,10 @@ body section {
   /* padding: 0 207px; */
 }
 
+
 .header__subtitles {
   list-style-type: none;
-  height: 40px;
+  height: 50px;
   background-color: #f1f1f1;
   overflow: hidden;
   display: flex;
@@ -92,6 +95,46 @@ body section {
 
 .header__subtitles li {
   margin-bottom: unset;
+}
+
+
+.content{
+  margin-top:360px;
+  width: 90%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+@media screen and (max-width: 768px) and  (min-width:300px) {
+  .content {
+    margin-top: 60px;
+  }
+}
+
+.content__para{
+  background-color: #f1f1f1;
+  width: 95wv;
+  padding: 5px;
+  margin: 5px;
+}
+
+.content__para ul {
+  padding-inline-end: 40px;
+}
+
+.content__para p {
+  padding: 5px;
+}
+
+h1,h2 {
+  text-align: center;
+  background-size: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
@@ -118,12 +161,13 @@ body section {
 .sub__elem {
   padding: 10px;
   transition-duration: 0.6s;
- 
+  
   justify-content: center;
   display: flex;
 }
 
 .sub__elem a {
+  font-size: large;
   text-decoration: none;
   color: black;
 }
@@ -143,4 +187,15 @@ li {
 .announcement__elem a {
   text-decoration: none;
   color: lightcoral;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  width:80vw;
+  font-size:16px;
+}
+
+table,th,td {
+  border: 1px solid black;
 }
