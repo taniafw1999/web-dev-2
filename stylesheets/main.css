@@ -17,6 +17,7 @@ body section {
 
 body p, ul {
   font-size: 2vh;
+>>>>>>> 57bf3fd72527484b29943061948d5c5aed2bec3b
 }
 
 
@@ -95,40 +96,3 @@ p {
   width: 100%;
   font-size: 16px;
 }
-<<<<<<< HEAD
-
-table {
-  margin: 40px 0px 20px;
-  width: 100%;
-}
-
-table,
-th,
-td {
-  border: 1px solid black;
-}
-
-td,
-th {
-  padding: 30px;
-  text-align: center;
-}
-
-@media screen and (max-width: 768px) and (min-width: 300px) {
-  td,
-  th {
-    padding: 5px;
-  }
-}
-
-th {
-  font-size: larger;
-}
-
-@media screen and (max-width: 768px) and (min-width: 300px) {
-  tr {
-    font-size: 10px;
-  }
-}
-=======
->>>>>>> 375bfa5bebe3de393efef5d6a6259088fd8f7728
