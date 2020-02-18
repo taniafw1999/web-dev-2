@@ -11,8 +11,13 @@ body section {
   padding: 30px;
 }
 
+body p, ul {  
+  font-size: 2vh;
+}
+
 .header {
   width: 100vw;
+  height: fit-content;
   margin: 0;
   z-index: 1;
   position: fixed;
@@ -41,7 +46,7 @@ body section {
   background-image: url("../images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
   background-size: 100%;
   box-sizing: border-box;
-  height: 150px;
+  height: 10vw;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -50,20 +55,20 @@ body section {
 .header__logo--left {
   max-width: 100%;
   height: auto;
-  width: 100px;
+  width: 8vw;
   left: 100px;
   padding-right: 50px;
 }
 
 .header__inner--top h2 {
   margin: 0;
-  font-size: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .header__title {
+  font-size: 5vw;
   color: white;
 }
 
@@ -73,7 +78,6 @@ body section {
 
 .header__inner--bottom ul {
   margin-top: 0;
-  /* padding: 0 207px; */
 }
 
 .header__subtitles {
@@ -98,8 +102,8 @@ body section {
 }
 
 .content {
-  margin-top: 220px;
-  width: 90%;
+  margin-top: 15vw;
+  width: 90vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -112,22 +116,15 @@ body section {
 
 .content__para {
   background-color: #f1f1f1;
-  width: 95wv;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 5vw;
+  margin-top: 5vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content__intro {
-  width: 95wv;
+  width: 95vw;
   padding: 0px;
-}
-
-.content__para ul {
-  padding-inline-end: 40px;
-}
-
-.content__para p {
-  padding: 5px;
 }
 
 h1,
