@@ -14,11 +14,11 @@ body section {
 .header {
   width: 100vw;
   margin: 0;
-  z-index: 1;
   position: fixed;
   overflow: hidden;
   font-size: 0.5vw;
   vertical-align: middle;
+  z-index: 1;
   top: 0;
   left: 0;
   padding: 0;
@@ -41,7 +41,7 @@ body section {
   background-image: url("../images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
   background-size: 100%;
   box-sizing: border-box;
-  height: 300px;
+  height: 150px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -50,14 +50,14 @@ body section {
 .header__logo--left {
   max-width: 100%;
   height: auto;
-  width: 200px;
+  width: 100px;
   left: 100px;
   padding-right: 50px;
 }
 
 .header__inner--top h2 {
   margin: 0;
-  font-size: 80px;
+  font-size: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,6 +65,7 @@ body section {
 
 .header__title {
   color: white;
+  text-shadow: 2px 2px #8f8f8f;
 }
 
 .header__title a {
@@ -79,7 +80,7 @@ body section {
 .header__subtitles {
   list-style-type: none;
   height: 50px;
-  background-color: #f1f1f1;
+  background-color: #dbdbdb;
   overflow: hidden;
   display: flex;
   justify-content: space-around;
@@ -98,7 +99,7 @@ body section {
 }
 
 .content {
-  margin-top: 360px;
+  margin-top: 220px;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -129,7 +130,14 @@ body section {
 .content__para p {
   padding: 5px;
 }
-
+.anchor{
+  position:relative;
+}
+a.anchor {
+  z-index:0;
+  left: 0px;
+  top: -220px;
+}
 h1,
 h2 {
   text-align: center;
@@ -210,6 +218,11 @@ p {
   font-size: 16px;
 }
 
+table {
+  margin: 40px 0px 20px;
+  width: 100%;
+}
+
 table,
 th,
 td {
@@ -222,20 +235,6 @@ th {
   text-align: center;
 }
 
-th {
-  font-size: larger;
-}
-table {
-  margin: 40px 0px 20px;
-  width: 100%;
-}
-
-@media screen and (max-width: 768px) and (min-width: 300px) {
-  tr {
-    font-size: 10px;
-  }
-}
-
 @media screen and (max-width: 768px) and (min-width: 300px) {
   td,
   th {
@@ -243,3 +242,12 @@ table {
   }
 }
 
+th {
+  font-size: larger;
+}
+
+@media screen and (max-width: 768px) and (min-width: 300px) {
+  tr {
+    font-size: 10px;
+  }
+}
