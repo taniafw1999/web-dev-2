@@ -65,6 +65,7 @@ body section {
 
 .header__title {
   color: white;
+  text-shadow: 2px 2px #8f8f8f;
 }
 
 .header__title a {
