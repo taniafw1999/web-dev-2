@@ -15,7 +15,7 @@ body section {
   padding: 30px;
 }
 
-body p, ul {  
+body p, ul {
   font-size: 2vh;
 }
 
@@ -46,6 +46,21 @@ body p, ul {
   padding: 0px;
 }
 
+.content__para ul {
+  padding-inline-end: 40px;
+}
+
+.content__para p {
+  padding: 5px;
+}
+.anchor{
+  position:relative;
+}
+a.anchor {
+  z-index:0;
+  left: 0px;
+  top: -220px;
+}
 h1,
 h2 {
   text-align: center;
