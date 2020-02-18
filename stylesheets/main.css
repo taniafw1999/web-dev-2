@@ -70,6 +70,7 @@ body p, ul {
 .header__title {
   font-size: 5vw;
   color: white;
+  text-shadow: 2px 2px #8f8f8f;
 }
 
 .header__title a {
