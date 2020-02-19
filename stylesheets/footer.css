@@ -4,15 +4,13 @@
   }
   
   .footer__inner {
+    font-size: 3vh;
     text-align: center;
     background-size: 100%;
     background-color: azure;
     opacity: 0.5;
     box-sizing: border-box;
     height: 50px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
   }
   
   .footer__inner:hover {
